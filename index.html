@@ -1,258 +1,646 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cecilia Dávila Estética</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Cecilia Dávila Estética</title>
 
-    <!-- CSS only -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
-      crossorigin="anonymous"
-    />
+		<!-- CSS only -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+			crossorigin="anonymous"
+		/>
 
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
-    <header class="container-fluid bg-dark position-sticky top-0">
-      <ul
-        class="nav nav-pills mb-3 py-3 container"
-        id="pills-tab"
-        role="tablist"
-      >
-        <li class="nav-item text-primary" role="presentation">
-          <a
-            class="nav-link "
-            id="pills-home-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#pills-home"
-            type="button"
-            role="tab"
-            aria-controls="pills-home"
-            aria-selected="true"
-            >Home</a
-          >
-        </li>
-        <li class="nav-item" role="presentation">
-          <a
-            class="nav-link active"
-            id="pills-profile-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#pills-profile"
-            type="button"
-            role="tab"
-            aria-controls="pills-profile"
-            aria-selected="false"
-            >Productos</a
-          >
-        </li>
-        <li class="nav-item" role="presentation">
-          <a
-            class="nav-link"
-            id="pills-contact-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#pills-contact"
-            type="button"
-            role="tab"
-            aria-controls="pills-contact"
-            aria-selected="false"
-            >Carrito</a
-          >
-        </li>
-      </ul>
-    </header>
+		<link rel="stylesheet" href="css/styles.css" />
+	</head>
+	<body>
+		<header class="container-fluid bg-dark position-sticky top-0">
+			<ul
+				class="nav nav-pills mb-3 py-3 container"
+				id="pills-tab"
+				role="tablist"
+			>
+				<li class="nav-item text-primary" role="presentation">
+					<a
+						class="nav-link"
+						id="pills-home-tab"
+						data-bs-toggle="pill"
+						data-bs-target="#pills-home"
+						type="button"
+						role="tab"
+						aria-controls="pills-home"
+						aria-selected="true"
+						>Inicio</a
+					>
+				</li>
+				<li class="nav-item" role="presentation">
+					<a
+						class="nav-link active"
+						id="pills-profile-tab"
+						data-bs-toggle="pill"
+						data-bs-target="#pills-profile"
+						type="button"
+						role="tab"
+						aria-controls="pills-profile"
+						aria-selected="false"
+						>Productos</a
+					>
+				</li>
+				<li class="nav-item" role="presentation">
+					<a
+						class="nav-link"
+						id="pills-contact-tab"
+						data-bs-toggle="pill"
+						data-bs-target="#pills-contact"
+						type="button"
+						role="tab"
+						aria-controls="pills-contact"
+						aria-selected="false"
+						>Carrito</a
+					>
+				</li>
+			</ul>
+		</header>
+		
+		<div
+			class="alert container position-sticky top-0 alert-primary hide"
+			role="alert"
+		>
+			Producto Añadido al carrito!
+		</div>
+		<div
+			class="alert container position-sticky top-0 alert-danger remove"
+			role="alert"
+		>
+			Producto removido!
+		</div>
 
-    <div class="alert container position-sticky top-0 alert-primary hide" role="alert">
-    Producto Añadido al carrito!
-    </div>
-    <div class="alert container position-sticky top-0 alert-danger remove" role="alert">
-      Producto removido!
-    </div>
+		<div class="tab-content" id="pills-tabContent">
+			<div
+				class="tab-pane fade"
+				id="pills-home"
+				role="tabpanel"
+				aria-labelledby="pills-home-tab"
+			>
+				 
+		<div
+			id="carouselExampleCaptions"
+			class="carousel slide"
+			data-bs-ride="false"
+		>
+			<div class="carousel-indicators">
+				<button
+					type="button"
+					data-bs-target="#carouselExampleCaptions"
+					data-bs-slide-to="0"
+					class="active"
+					aria-current="true"
+					aria-label="Slide 1"
+				></button>
+				<button
+					type="button"
+					data-bs-target="#carouselExampleCaptions"
+					data-bs-slide-to="1"
+					aria-label="Slide 2"
+				></button>
+				<button
+					type="button"
+					data-bs-target="#carouselExampleCaptions"
+					data-bs-slide-to="2"
+					aria-label="Slide 3"
+				></button>
+			</div>
 
-    <div class="tab-content" id="pills-tabContent">
-      <div
-        class="tab-pane fade "
-        id="pills-home"
-        role="tabpanel"
-        aria-labelledby="pills-home-tab"
-      >
-        1
-      </div>
-      <div
-        class="tab-pane fade show active container"
-        id="pills-profile"
-        role="tabpanel"
-        aria-labelledby="pills-profile-tab"
-      >
-        <h2 class="h4 m-4 text-primary">Productos</h2>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img
+						src="./img/estetica01.jpg"
+						class="d-block w-100"
+						alt="mujer y belleza"
+					/>
+					<div class="carousel-caption">
+						<h1>Especialista en Cuidado y Belleza Personal</h1>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+							natus nesciunt nam modi error perferendis provident, ullam
+							mollitia
+						</p>
+					</div>
+				</div>
 
-        <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+				<div class="carousel-item">
+					<img
+						src="./img/estetica05.jpg"
+						class="d-block w-100"
+						alt="mujer es una sesión de masajes reductores"
+					/>
+					<div class="carousel-caption">
+						<h1>Cósmetica profesional</h1>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+							natus nesciunt nam modi error perferendis provident, ullam
+							mollitia.
+						</p>
+					</div>
+				</div>
 
-          <div class="col d-flex justify-content-center mb-4">
-            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
-              <h5 class="card-title pt-2 text-center text-primary">Producto 1</h5>
-              <img src="./img/producto1.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text text-white-50 description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos porro minima alias rerum ut cumque</p>
-                <h5 class="text-primary">Precio: <span class="precio">$ 1499</span></h5>
-                <div class="d-grid gap-2">
-                <button  class="btn btn-primary button">Añadir a Carrito</button>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex justify-content-center mb-4">
-            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
-              <h5 class="card-title pt-2 text-center text-primary">Producto 2</h5>
-              <img src="./img/producto2.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text text-white-50 description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos porro minima alias rerum ut cumque</p>
-                <h5 class="text-primary">Precio: <span class="precio">$ 1399</span></h5>
-                <div class="d-grid gap-2">
-                <button  class="btn btn-primary button">Añadir a Carrito</button>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex justify-content-center mb-4">
-            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
-              <h5 class="card-title pt-2 text-center text-primary">Producto 3</h5>
-              <img src="./img/producto3.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text text-white-50 description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos porro minima alias rerum ut cumque</p>
-                <h5 class="text-primary">Precio: <span class="precio">$ 3499</span></h5>
-                <div class="d-grid gap-2">
-                <button  class="btn btn-primary button">Añadir a Carrito</button>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex justify-content-center mb-4">
-            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
-              <h5 class="card-title pt-2 text-center text-primary">Producto 4</h5>
-              <img src="./img/producto1.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text text-white-50 description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos porro minima alias rerum ut cumque</p>
-                <h5 class="text-primary">Precio: <span class="precio">$ 799</span></h5>
-                <div class="d-grid gap-2">
-                <button  class="btn btn-primary button">Añadir a Carrito</button>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex justify-content-center mb-4">
-            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
-              <h5 class="card-title pt-2 text-center text-primary">3999</h5>
-              <img src="./img/producto2.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text text-white-50 description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos porro minima alias rerum ut cumque</p>
-                <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
-                <div class="d-grid gap-2">
-                <button  class="btn btn-primary button">Añadir a Carrito</button>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex justify-content-center mb-4">
-            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
-              <h5 class="card-title pt-2 text-center text-primary">2199</h5>
-              <img src="./img/producto3.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text text-white-50 description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos porro minima alias rerum ut cumque</p>
-                <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
-                <div class="d-grid gap-2">
-                <button  class="btn btn-primary button">Añadir a Carrito</button>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex justify-content-center mb-4">
-            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
-              <h5 class="card-title pt-2 text-center text-primary">Producto 7</h5>
-              <img src="./img/producto1.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text text-white-50 description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos porro minima alias rerum ut cumque</p>
-                <h5 class="text-primary">Precio: <span class="precio">$ 1699</span></h5>
-                <div class="d-grid gap-2">
-                <button  class="btn btn-primary button">Añadir a Carrito</button>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex justify-content-center mb-4">
-            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
-              <h5 class="card-title pt-2 text-center text-primary">Producto 8</h5>
-              <img src="./img/producto2.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text text-white-50 description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos porro minima alias rerum ut cumque</p>
-                <h5 class="text-primary">Precio: <span class="precio">$ 1099</span></h5>
-                <div class="d-grid gap-2">
-                <button  class="btn btn-primary button">Añadir a Carrito</button>
-              </div>
-              </div>
-            </div>
-          </div>
+				<div class="carousel-item">
+					<img
+						src="./img/estetica03.jpg"
+						class="d-block w-100"
+						alt="mujer aplicandose una crema facial"
+					/>
+					<div class="carousel-caption">
+						<h1>Tratamientos personalizados</h1>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+							natus nesciunt nam modi error perferendis provident, ullam
+							mollitia
+						</p>
+					</div>
+				</div>
+			</div>
 
+			<button
+				class="carousel-control-prev"
+				type="button"
+				data-bs-target="#carouselExampleCaptions"
+				data-bs-slide="prev"
+			>
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button
+				class="carousel-control-next"
+				type="button"
+				data-bs-target="#carouselExampleCaptions"
+				data-bs-slide="next"
+			>
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
 
-        </div>
+		<!----- SECTION SOBRE NOSOTROS ------>
+	
+		
+		<section id="sobre-nosotros" class="sobre-nosotros section-padding">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-12 col-12">
+						<div class="sobre-nosotros-img">
+							<img
+								src="./img/estetica06.jpg"
+								alt="mujer haciendose un tratamiento facial"
+								class="img-fluid"
+							/>
+						</div>
+					</div>
+					<div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+						<div class="sobre-nosotros-text">
+							<h2>
+								Ofrecemos Los Mejores <br />
+								Tratamientos De La Zona
+							</h2>
+							<p>
+								Sabemos que la piel absorbe, entonces le ofrecemos lo mas noble, puro y nutritivo.  El cuidado natural de la piel, es una consecuencia de una toma de conciencia sobre lo importante que es llevar un estilo de vida natural. La cosmetica es un rubro más de esta forma de vivir la vida. Ademas el cuerpo reconoce la pureza de los elementos y absorbe y se nutre de una manera que lo sintetico no puede cubrir. 
+							</p>
+							<a
+								href="pages/sobrenosotros.html"
+								class="btn bg-success text-light"
+								role="button"
+								>Ver Más</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-      </div>
-      <div
-        class="tab-pane fade carrito"
-        id="pills-contact"
-        role="tabpanel"
-        aria-labelledby="pills-contact-tab"
-      >
-      <br>
-      <table class="table table-dark table-hover">
-        <thead>
-          <tr class="text-primary">
-            <th scope="col">#</th>
-            <th scope="col">Productos</th>
-            <th scope="col">Precio</th>
-            <th scope="col">Cantidad</th>
-          </tr>
-        </thead>
-        <tbody class="tbody">
+		<!------------------------------ TRATAMIENTOS ---------------------------------------->
 
+		<section id="tratamientos" class="tratamientos section-padding">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="section-header text-center pb-5">
+							<h2>Nuestros Tratamientos</h2>
+							<p>
+								Todos nuestros tratamientos trabajan con la última tecnología
+								que garantiza no sólo los mejores resultados, <br />
+								sino el cuidado constante de todo tu cuerpo.
+							</p>
+						</div>
+					</div>
+				</div>
 
+				<div class="row">
+					<div class="col-12 col-md-12 col-lg-4">
+						<div class="card text-white text-center bg-dark pb-2">
+							<div class="card-body">
+								<i class="bi bi-arrow-down-square-fill"></i>
+								<h3>Tratamientos Faciales</h3>
+								<p class="lead">
+									- Dermapen: <br>
+									innovador tratamiento que mediante micropunciones estimula la producción de colágeno y elastina. Favorece la penetración de activos como hialurónico, vitaminas y tensores.
+									Ideal para lucir la piel luminosa, hidratada y con reducción de imperfecciones.
+								</p>
+								<button
+									class="btn btn-success text-white"
+									data-toggle="modal"
+									data-target="#faciales"
+								>
+									Ver Más
+								</button>
+							</div>
+						</div>
+					</div>
 
-        </tbody>
-      </table>
-      <br><br>
-      <div class="row mx-4">
-        <div class="col">
-          <h3 class="itemCartTotal text-white">Total: 0</h3>
-        </div>
-        <div class="col d-flex justify-content-end">
-          <button class="btn btn-success">COMPRAR</button>
-        </div>
-      </div>
+					<div class="col-12 col-md-12 col-lg-4">
+						<div class="card text-white text-center bg-dark pb-2">
+							<div class="card-body">
+								<i class="bi bi-arrow-down-square-fill"></i>
+								<h3>Tratamientos Corporales</h3>
+								<p class="lead">
+									- Himfu + crío frecuencia <br>
+									- Body up <br>
+									- Masajes reductores manuales <br>
+									- Drenaje linfático manual <br>
+									Combatí la celulitis y flacidez con nuestros <br> tratamientos y verás excelentes <br> resultados.
+								</p>
+								<button
+									class="btn btn-success text-white"
+									data-toggle="modal"
+									data-target="#corporales"
+								>
+									Ver Más
+								</button>
+							</div>
+						</div>
+					</div>
 
-      </div>
-    </div>
+					<div class="col-12 col-md-12 col-lg-4">
+						<div class="card text-white text-center bg-dark pb-2">
+							<div class="card-body">
+								<i class="bi bi-arrow-down-square-fill"></i>
+								<h3>Masajes Descontracturantes</h3>
+								<p class="lead">
+									Un tipo de masaje que tiene como objetivo liberar los músculos y las articulaciones para ayudarlos a funcionar en su nivel óptimo. El propósito del masaje es relajar y aflojar los músculos rígidos y tensos. <br> Cada sesión suele durar entre 50 y 60 minutos.
+								</p>
+								<button
+									class="btn btn-success text-white"
+									data-toggle="modal"
+									data-target="#masajes"
+								>
+									Ver Más
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <footer class="bg-dark p-3 mt-5">
-      <p class="text-center m-0 text-muted">Cecilia Dávila Estética</p>
-    </footer>
+		<!-- Modal Faciales -->
+		<div
+			class="modal fade"
+			id="faciales"
+			tabindex="-1"
+			role="dialog"
+			aria-labelledby="facialesLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="facialesLabel">
+							Tratamientos Faciales
+						</h5>
+						<button
+							type="button"
+							class="close"
+							data-dismiss="modal"
+							aria-label="Close"
+						>
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<img src="./img/estetica01.jpg" alt="#" />
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-success" data-dismiss="modal">
+							Cerrar
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.js"
-      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-      crossorigin="anonymous"
-    ></script>
+		<!-- Modal Corporales -->
+		<div
+			class="modal fade"
+			id="corporales"
+			tabindex="-1"
+			role="dialog"
+			aria-labelledby="corporalesLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="corporalesLabel">
+							Tratamientos Corporales
+						</h5>
+						<button
+							type="button"
+							class="close"
+							data-dismiss="modal"
+							aria-label="Close"
+						>
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<img src="./img/estetica01.jpg" alt="#" />
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-success" data-dismiss="modal">
+							Cerrar
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <!-- JavaScript Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-      crossorigin="anonymous"
-    ></script>
+		<!-- Modal Masajes -->
+		<div
+			class="modal fade"
+			id="masajes"
+			tabindex="-1"
+			role="dialog"
+			aria-labelledby="masajesLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="masajesLabel">
+							Masajes Descontracturantes
+						</h5>
+						<button
+							type="button"
+							class="close"
+							data-dismiss="modal"
+							aria-label="Close"
+						>
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<img src="./img/estetica01.jpg" alt="#" />
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-success" data-dismiss="modal">
+							Cerrar
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+			</div>
 
-    <script src="./js/scripts.js"></script>
-    
-  </body>
+			<div
+				class="tab-pane fade show active container"
+				id="pills-profile"
+				role="tabpanel"
+				aria-labelledby="pills-profile-tab"
+			>
+				<h2 class="h4 m-4 text-primary">Productos</h2>
+
+				<div
+					class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4"
+				>
+					<div class="col d-flex justify-content-center mb-4">
+						<div class="card shadow mb-1 bg-dark rounded" style="width: 20rem">
+							<h5 class="card-title pt-2 text-center text-primary">
+								Golden Milk
+							</h5>
+							<img src="./img/producto1.jpg" class="card-img-top" alt="..." />
+							<div class="card-body">
+								<p class="card-text text-white-50 description">
+									Antiinflamatorio, calmante, antioxidante
+									Nutritivo y humectante.																
+								</p>
+								<h5 class="text-primary">
+									Precio: <span class="precio">$ 4020</span>
+								</h5>
+								<div class="d-grid gap-2">
+									<button class="btn btn-primary button">
+										Añadir a Carrito
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col d-flex justify-content-center mb-4">
+						<div class="card shadow mb-1 bg-dark rounded" style="width: 20rem">
+							<h5 class="card-title pt-2 text-center text-primary">
+								Crema Facial
+							</h5>
+							<img src="./img/producto2.jpg" class="card-img-top" alt="..." />
+							<div class="card-body">
+								<p class="card-text text-white-50 description">
+									Nutre, repara y protege la piel gracias a la acción de los Omegas y las Vitaminas en su fórmula. 
+								</p>
+								<h5 class="text-primary">
+									Precio: <span class="precio">$ 4170</span>
+								</h5>
+								<div class="d-grid gap-2">
+									<button class="btn btn-primary button">
+										Añadir a Carrito
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col d-flex justify-content-center mb-4">
+						<div class="card shadow mb-1 bg-dark rounded" style="width: 20rem">
+							<h5 class="card-title pt-2 text-center text-primary">
+								Rice
+							</h5>
+							<img src="./img/producto9.jpg" class="card-img-top" alt="..." />
+							<div class="card-body">
+								<p class="card-text text-white-50 description">
+									El agua de arroz es muy buena para unificar el tono de la piel, atenuar manchas y marcas de acne.
+								</p>
+								<h5 class="text-primary">
+									Precio: <span class="precio">$ 2900</span>
+								</h5>
+								<div class="d-grid gap-2">
+									<button class="btn btn-primary button">
+										Añadir a Carrito
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col d-flex justify-content-center mb-4">
+						<div class="card shadow mb-1 bg-dark rounded" style="width: 20rem">
+							<h5 class="card-title pt-2 text-center text-primary">
+								Óleo Corporal
+							</h5>
+							<img src="./img/producto8.jpg" class="card-img-top" alt="..." />
+							<div class="card-body">
+								<p class="card-text text-white-50 description">
+									Este Óleo contiene propiedades nobles, nutritivas y naturales.
+								</p>
+								<h5 class="text-primary">
+									Precio: <span class="precio">$ 3700</span>
+								</h5>
+								<div class="d-grid gap-2">
+									<button class="btn btn-primary button">
+										Añadir a Carrito
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col d-flex justify-content-center mb-4">
+						<div class="card shadow mb-1 bg-dark rounded" style="width: 20rem">
+							<h5 class="card-title pt-2 text-center text-primary">Néctar</h5>
+							<img src="./img/producto10.jpg" class="card-img-top" alt="..." />
+							<div class="card-body">
+								<p class="card-text text-white-50 description">
+									 Su alto contenido de acido linoleico promueve la regeneracion celular y estimula producción del colágeno.
+								</p>
+								<h5 class="text-primary">
+									Precio: <span class="precio">$ 6550</span>
+								</h5>
+								<div class="d-grid gap-2">
+									<button class="btn btn-primary button">
+										Añadir a Carrito
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col d-flex justify-content-center mb-4">
+						<div class="card shadow mb-1 bg-dark rounded" style="width: 20rem">
+							<h5 class="card-title pt-2 text-center text-primary">Kale</h5>
+							<img src="./img/producto11.jpg" class="card-img-top" alt="..." />
+							<div class="card-body">
+								<p class="card-text text-white-50 description">
+									Hidrata y nutre la piel con rápida absorción.
+								</p>
+								<h5 class="text-primary">
+									Precio: <span class="precio">$ 3780</span>
+								</h5>
+								<div class="d-grid gap-2">
+									<button class="btn btn-primary button">
+										Añadir a Carrito
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col d-flex justify-content-center mb-4">
+						<div class="card shadow mb-1 bg-dark rounded" style="width: 20rem">
+							<h5 class="card-title pt-2 text-center text-primary">
+								Té Verde
+							</h5>
+							<img src="./img/producto12.jpg" class="card-img-top" alt="..." />
+							<div class="card-body">
+								<p class="card-text text-white-50 description">
+									- Hidrata, refresca y protege. <br>
+									- Fija el maquillaje, revitaliza, ilumina <br>
+									- Descongestivo y calmante.
+									
+								</p>
+								<h5 class="text-primary">
+									Precio: <span class="precio">$ 2700</span>
+								</h5>
+								<div class="d-grid gap-2">
+									<button class="btn btn-primary button">
+										Añadir a Carrito
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col d-flex justify-content-center mb-4">
+						<div class="card shadow mb-1 bg-dark rounded" style="width: 20rem">
+							<h5 class="card-title pt-2 text-center text-primary">
+								Crema Hidratante Corporal
+							</h5>
+							<img src="./img/producto13.jpg" class="card-img-top" alt="..." />
+							<div class="card-body">
+								<p class="card-text text-white-50 description">
+									Sus aceites de Jojoba, Almendras y Manteca de Karite aportan una alta dosis de beneficios para la piel.
+								</p>
+								<h5 class="text-primary">
+									Precio: <span class="precio">$ 4000</span>
+								</h5>
+								<div class="d-grid gap-2">
+									<button class="btn btn-primary button">
+										Añadir a Carrito
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div
+				class="tab-pane fade carrito"
+				id="pills-contact"
+				role="tabpanel"
+				aria-labelledby="pills-contact-tab"
+			>
+				<br />
+				<table class="table table-dark table-hover">
+					<thead>
+						<tr class="text-primary">
+							<th scope="col">#</th>
+							<th scope="col">Productos</th>
+							<th scope="col">Precio</th>
+							<th scope="col">Cantidad</th>
+						</tr>
+					</thead>
+					<tbody class="tbody"></tbody>
+				</table>
+				<br /><br />
+				<div class="row mx-4">
+					<div class="col">
+						<h3 class="itemCartTotal text-white">Total: 0</h3>
+					</div>
+					<div class="col d-flex justify-content-end">
+						<button class="btn btn-success">COMPRAR</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="bg-dark p-3 mt-5">
+			<p class="text-center m-0 text-muted">Cecilia Dávila Estética</p>
+		</footer>
+
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.js"
+			integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+			crossorigin="anonymous"
+		></script>
+
+		<!-- JavaScript Bundle with Popper -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+			crossorigin="anonymous"
+		></script>
+
+		<script src="./js/scripts.js"></script>
+	</body>
 </html>

@@ -17,7 +17,7 @@ function addToCarritoItem(e){
   const newItem = {
     title: itemTitle,
     precio: itemPrice,
-    img: itemImg,
+    img: itemImg, 
     cantidad: 1
   }
 
