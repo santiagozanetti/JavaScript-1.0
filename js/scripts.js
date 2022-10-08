@@ -1,8 +1,8 @@
-const Clickbutton = document.querySelectorAll('.button')
+const clickButton = document.querySelectorAll('.button')
 const tbody = document.querySelector('.tbody')
 let carrito = []
 
-Clickbutton.forEach(btn => {
+clickButton.forEach(btn => {
   btn.addEventListener('click', addToCarritoItem)
 })
 
@@ -40,7 +40,7 @@ function addItemCarrito(newItem){
       carrito[i].cantidad ++;
       const inputValue = InputElemnto[i]
       inputValue.value++;
-      CarritoTotal()
+      TotalCarrito()
       return null;
     }
   }
@@ -50,6 +50,8 @@ function addItemCarrito(newItem){
   renderCarrito()
 } 
 
+
+/* REMOVER PRODUCTOS*/
 
 function renderCarrito(){
   tbody.innerHTML = ''
@@ -76,10 +78,13 @@ function renderCarrito(){
     tr.querySelector(".delete").addEventListener('click', removeItemCarrito)
     tr.querySelector(".input__elemento").addEventListener('change', sumaCantidad)
   })
-  CarritoTotal()
+  TotalCarrito()
 }
 
-function CarritoTotal(){
+
+/* PRECIO TOTAL DEL CARRITO */
+
+function TotalCarrito(){
   let Total = 0;
   const itemCartTotal = document.querySelector('.itemCartTotal')
   carrito.forEach((item) => {
@@ -90,6 +95,8 @@ function CarritoTotal(){
   itemCartTotal.innerHTML = `Total $${Total}`
   addLocalStorage()
 }
+
+
 
 function removeItemCarrito(e){
   const buttonDelete = e.target
@@ -110,7 +117,7 @@ function removeItemCarrito(e){
     alert.classList.remove('remove')
 
   tr.remove()
-  CarritoTotal()
+  TotalCarrito()
 }
 
 function sumaCantidad(e){
@@ -121,7 +128,7 @@ function sumaCantidad(e){
     if(item.title.trim() === title){
       sumaInput.value < 1 ?  (sumaInput.value = 1) : sumaInput.value;
       item.cantidad = sumaInput.value;
-      CarritoTotal()
+      TotalCarrito()
     }
   })
 }
